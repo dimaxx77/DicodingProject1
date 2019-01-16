@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="8dp"
+        android:weightSum="10">
+
+        <ImageView
+            android:id="@+id/gambar_sampul"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_weight="3"
+            android:src="@drawable/ic_launcher_foreground"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:orientation="vertical"
+            android:layout_weight="7">
+
+            <TextView
+                android:id="@+id/judul_film"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Judul"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/tanggal_film"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="tanggal"
+                android:textStyle="bold|italic"/>
+
+            <TextView
+                android:id="@+id/sinopsis_film"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sinopsis"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
